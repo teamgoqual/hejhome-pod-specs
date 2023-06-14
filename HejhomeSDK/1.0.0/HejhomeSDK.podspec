@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint HejhomeBase.podspec' to ensure this is a
+# Be sure to run `pod lib lint HejhomeSDK.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'HejhomeBase'
+  s.name             = 'HejhomeSDK'
   s.version          = '1.0.0'
-  s.summary          = 'Hejhome Base SDK'
+  s.summary          = 'HejhomeSDK.'
   s.swift_versions   = '4.0'
 
 # This description is used to generate tags and improve search results.
@@ -22,19 +22,19 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://bitbucket.org/goqual-workspace/hejhome-base-sdk'
+  s.homepage         = 'https://bitbucket.org/goqual-workspace/hejhome-sdk'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '김다솜' => 'dskim0704@goqual.com' }
-  s.source           = { :git => 'https://bitbucket.org/goqual-workspace/hejhome-base-sdk.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://bitbucket.org/goqual-workspace/hejhome-sdk.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'HejhomeBase/Classes/**/*'
+  s.source_files = 'HejhomeSDK/Classes/**/*'
   
   # s.resource_bundles = {
-  #   'HejhomeBase' => ['HejhomeBase/Assets/*.png']
+  #   'HejhomeSDK' => ['HejhomeSDK/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
@@ -42,7 +42,18 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   
   s.frameworks = 'Foundation'
-
-  s.dependency 'ThingSmartHomeKit','~> 5.0.0'
-#  s.dependency 'CryptoSwift', '~> 1.3.8'
+  
+  s.subspec 'Base' do |base|
+    base.source_files = 'HejhomeSDK/Classes/Base/**/*'
+    base.dependency 'ThingSmartHomeKit','~> 5.0.0'
+    base.dependency 'CryptoSwift', '~> 1.3.8'
+  end
+  
+  s.subspec 'Camera' do |camera|
+    camera.source_files = 'HejhomeSDK/Classes/Camera/**/*'
+    camera.dependency 'ThingSmartHomeKit','~> 5.0.0'
+    camera.dependency 'ThingSmartCameraKit','~> 5.6.0'
+    camera.dependency 'ThingCameraUIKit','~> 5.0.0'
+  end
+  
 end
