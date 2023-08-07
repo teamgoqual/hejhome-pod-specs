@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HejhomeSDKCamera'
-  s.version          = '1.2.6'
+  s.version          = '1.3.0'
   s.summary          = 'HejhomeSDKCamera'
   s.swift_versions   = '4.0'
 
@@ -12,7 +12,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://bitbucket.org/goqual-workspace/hejhome-sdk'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '김다솜' => 'dskim0704@goqual.com' }
-  s.source           = { :git => 'https://bitbucket.org/goqual-workspace/hejhome-sdk.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://bitbucket.org/goqual-workspace/hejhome-camera-sdk.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'
 
@@ -33,5 +33,6 @@ TODO: Add long description of the pod here.
   s.dependency 'ThingSmartHomeKit','~> 5.0.0'
   s.dependency 'ThingSmartCameraKit','~> 5.6.0'
   s.dependency 'ThingCameraUIKit','~> 5.0.0'
+  s.dependency 'HejhomeSDKCommon','~> 1.0.0'
   
 end

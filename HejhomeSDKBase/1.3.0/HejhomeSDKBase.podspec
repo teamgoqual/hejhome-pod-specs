@@ -12,7 +12,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://bitbucket.org/goqual-workspace/hejhome-pod-specs'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '김다솜' => 'dskim0704@goqual.com' }
-  s.source           = { :git => 'https://bitbucket.org/goqual-workspace/hejhome-pod-specs.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://bitbucket.org/goqual-workspace/hejhome-base-sdk.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'
 
@@ -33,6 +33,7 @@ TODO: Add long description of the pod here.
   s.dependency 'ThingSmartActivatorKit', '~>5.0.4'
   s.dependency 'ThingSmartHomeKit','~> 5.0.0'
   s.dependency 'CryptoSwift', '~> 1.3.8'
+  s.dependency 'HejhomeSDKCommon', '~> 1.0.0'
   
   s.resource_bundles = { 'HejhomeSDKBase' => ['Base/Assets/**/*.{xib,xcassets}'] }
   
