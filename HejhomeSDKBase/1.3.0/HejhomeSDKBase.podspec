@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HejhomeSDKBase'
-  s.version          = '1.2.3'
+  s.version          = '1.3.0'
   s.summary          = 'HejhomeSDKBase'
   s.swift_versions   = '4.0'
 
