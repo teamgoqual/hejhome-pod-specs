@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HejhomeSDKCommon'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'HejhomeSDKCommon'
   s.swift_versions   = '4.0'
 

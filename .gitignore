@@ -48,3 +48,6 @@ Thumbs.db
 *.mov
 *.wmv
 
+HejhomeSDKBase/*/Base/*
+HejhomeSDKCamera/*/Camera/*
+HejhomeSDKCommon/*/Common/*
