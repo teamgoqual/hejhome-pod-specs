@@ -33,6 +33,6 @@ TODO: Add long description of the pod here.
   s.dependency 'ThingSmartHomeKit','= 5.0.0'
   s.dependency 'ThingSmartCameraKit','= 5.6.0'
   s.dependency 'ThingCameraUIKit','= 5.0.0'
-  s.dependency 'HejhomeSDKCommon','= 1.0.0'
+  s.dependency 'HejhomeSDKCommon','= 1.0.1'
   
 end

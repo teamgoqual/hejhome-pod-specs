@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.dependency 'ThingSmartActivatorKit', '= 5.0.4'
   s.dependency 'ThingSmartHomeKit','= 5.0.0'
   s.dependency 'CryptoSwift', '= 1.3.8'
-  s.dependency 'HejhomeSDKCommon', '= 1.0.0'
+  s.dependency 'HejhomeSDKCommon', '= 1.0.1'
   
   s.resource_bundles = { 'HejhomeSDKBase' => ['Base/Assets/**/*.{xib,xcassets}'] }
   
