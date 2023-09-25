@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HejhomeSDKCamera'
-  s.version          = '1.4.6'
+  s.version          = '1.4.8'
   s.summary          = 'HejhomeSDKCamera'
   s.swift_versions   = '4.0'
 
@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.frameworks = 'Foundation'
-  
+
   s.dependency 'ThingSmartUtil', '~> 5.2.2'
   s.dependency 'ThingSmartHomeKit','~> 5.0.0'
   s.dependency 'ThingSmartCameraKit','~> 5.6.0'
