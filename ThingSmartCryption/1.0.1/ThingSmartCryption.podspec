@@ -21,12 +21,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
 
-  s.ios.source_files = 'Build/ThingSmartCryption.xcframework/ios*simulator/ThingSmartCryption.framework/Headers/*'
-  s.resources = 'Build/ThingSmartCryption.xcframework/ios*simulator/**/*.bundle'
+  s.ios.source_files = 'ThingSmartCryption/1.0.1/Build/ThingSmartCryption.xcframework/ios*simulator/ThingSmartCryption.framework/Headers/*'
+  s.resources = 'ThingSmartCryption/1.0.1/Build/ThingSmartCryption.xcframework/ios*simulator/**/*.bundle'
 
-  s.watchos.source_files = 'Build/ThingSmartCryption.xcframework/watchos*simulator/ThingSmartCryption.framework/Headers/*'
+  s.watchos.source_files = 'ThingSmartCryption/1.0.1/Build/ThingSmartCryption.xcframework/watchos*simulator/ThingSmartCryption.framework/Headers/*'
 
-  s.vendored_frameworks = 'Build/ThingSmartCryption.xcframework'
+  s.vendored_frameworks = 'ThingSmartCryption/1.0.1/Build/ThingSmartCryption.xcframework'
 
   s.user_target_xcconfig = { 
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
