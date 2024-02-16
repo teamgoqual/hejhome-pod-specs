@@ -32,6 +32,6 @@ TODO: Add long description of the pod here.
   
   s.frameworks = 'Foundation'
   
-  s.dependency 'ThingSmartHomeKit','~> 5.8.0'
+  s.dependency 'ThingSmartHomeKit','~> 5.0.0'
   
 end
