@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HejhomeSDKCamera'
-  s.version          = '1.5.0'
+  s.version          = '1.5.2'
   s.summary          = 'HejhomeSDKCamera'
   s.swift_versions   = '4.0'
 
