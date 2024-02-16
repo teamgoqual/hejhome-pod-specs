@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.frameworks = 'Foundation'
 
   s.dependency 'ThingSmartUtil', '~> 5.2.2'
-  s.dependency 'ThingSmartHomeKit','~> 5.8.0'
+  s.dependency 'ThingSmartHomeKit','~> 5.0.0'
   s.dependency 'ThingSmartCameraKit','~> 5.6.0'
   s.dependency 'ThingCameraUIKit','~> 5.0.0'
   s.dependency 'HejhomeSDKCommon','~> 1.0.1'
